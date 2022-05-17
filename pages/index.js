@@ -1,6 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
+import Header from "../components/Header";
 import Entry from "../components/Entry"; //追加のentryコンポーメント
+import Footer from "../components/Footer";
 import styles from "../styles/Home.module.css";
 
 export default function Home(props) {
@@ -13,9 +15,7 @@ export default function Home(props) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <header>
-        <h1>Portfolio</h1>
-      </header>
+      <Header />
 
       <main>
         {/* 取得した記事分回してEntryコンポーネント表示する */}
@@ -24,11 +24,7 @@ export default function Home(props) {
         })}
       </main>
 
-      <footer>
-        <p>
-          <small>&copy; yuto062246</small>
-        </p>
-      </footer>
+      <Footer />
     </div>
   );
 }

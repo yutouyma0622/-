@@ -15,7 +15,8 @@ const EntryTitle = styled.h2`
 
 const EntryImg = styled.figure`
   & img {
-    width: 100%;
+    width: 200px;
+    height: 200px;
   }
 `;
 
@@ -23,7 +24,7 @@ export default function Entry(props) {
   return (
     <EntryContainer>
       <EntryTitle>{props.entry.title}</EntryTitle>
-
+      <p>追加追加</p>
       <EntryImg>
         <img src={props.entry.image.url} alt="" />
       </EntryImg>
