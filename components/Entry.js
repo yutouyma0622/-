@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Link from 'next/link'
 const EntryContainer = styled.section`
   margin: 16px;
   border: 1px solid #ccc;
@@ -23,8 +24,13 @@ const EntryImg = styled.figure`
 export default function Entry(props) {
   return (
     <EntryContainer>
-      <EntryTitle>{props.entry.title}</EntryTitle>
-      <p>追加追加</p>
+      <EntryTitle>
+      <Link href={`/entry/${props.entry.id}`}>
+      <a>
+      {props.entry.title}
+      </a>
+      </Link>
+      </EntryTitle>
       <EntryImg>
         <img src={props.entry.image.url} alt="" />
       </EntryImg>
