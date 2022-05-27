@@ -1,8 +1,11 @@
 import Head from "next/head";
 import Image from "next/image";
 import Header from "../components/Header";
+import Top from "../components/Top";
 import Entry from "../components/Entry"; //追加のentryコンポーメント
 import Footer from "../components/Footer";
+
+
 
 export default function Home(props) {
   console.log(props);
@@ -13,6 +16,8 @@ export default function Home(props) {
         <meta name="description" content="" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
+      <TopContainer/>
 
       <Header />
 
