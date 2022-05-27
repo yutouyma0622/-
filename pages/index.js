@@ -3,7 +3,6 @@ import Image from "next/image";
 import Header from "../components/Header";
 import Entry from "../components/Entry"; //追加のentryコンポーメント
 import Footer from "../components/Footer";
-import styles from "../styles/Home.module.css";
 
 export default function Home(props) {
   console.log(props);
