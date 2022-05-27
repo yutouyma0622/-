@@ -10,7 +10,7 @@ export default function Home(props) {
   return (
     <div>
       <Head>
-        <title>Portfolio</title>
+        <title>ポートフォリオ</title>
         <meta name="description" content="" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
