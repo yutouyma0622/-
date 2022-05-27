@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components";// スタイルコンポーネントを使うために必要
 import Link from 'next/link'
 const EntryContainer = styled.section`
   margin: 16px;

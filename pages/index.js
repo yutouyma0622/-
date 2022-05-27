@@ -20,7 +20,7 @@ export default function Home(props) {
       <main>
         {/* 取得した記事分回してEntryコンポーネント表示する */}
         {props.entries.contents.map((entry) => {
-          return <Entry entry={entry}></Entry>;
+          return <Entry entry={entry} key={entry.id}></Entry>;
         })}
       </main>
 
