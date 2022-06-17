@@ -1,47 +1,55 @@
 import styled from "styled-components";
 import Link from "next/link";
-const EntryContainer = styled.section`
-  margin: 16px;
-  border: 1px solid #ccc;
-  box-shadow: 2px 2px 3px rgba(255, 255, 255, 0.2);
-  border-radius: 8px;
+const EntryContainer = styled.article`
+  margin: 16px auto;
+  border: 1px solid #000;
+  border-radius: 2px;
+  max-width:1000px;
+  background-color: rgba(0, 0, 0, 0.3);
 `;
 
 const EntryTitle = styled.h2`
-  margin: 8px;
-  background-color: #eee;
-  padding: 8px;
-  border-radius: 8px;
+  margin: 0;
+  background-color: #000;
+  padding: 1em;
+  color: #fff;
 `;
 
 const EntryImg = styled.figure`
   & img {
-    width: 200px;
-    height: 200px;
+    margin:0 auto ;
+    width:100% ;
   }
 `;
 
 const EntryBody = styled.div`
-  & h2{
+  & * {
+    color: #fff;
+  }
+  & h2 {
     padding:16px ;
     background-color:#333 ;
     color:#fff ;
   }
-  & h3{
+  & img {
+    margin:16px auto ;
+    max-width:1000px ;
+    display:block ;
+  }
+  & h3 {
     padding:16px ;
     background-color:#333 ;
     color:#fff ;
   }
-  & p{
+  & p {
     margin:16px ;
   }
-  & ul{
+  & ul {
     margin:16px ;
   }
-  & li{
+  & li {
     
   }
-
   
 `
 
@@ -52,7 +60,7 @@ export default function Entry(props) {
       <EntryImg>
         <img src={props.entry.image.url} alt="" />
       </EntryImg>
-      <div dangerouslySetInnerHTML={{ __html: props.entry.body }}></div>;
+      <EntryBody dangerouslySetInnerHTML={{ __html: props.entry.body }}></EntryBody>;
     </EntryContainer>
   );
 }
