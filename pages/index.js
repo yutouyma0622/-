@@ -8,6 +8,10 @@ import Footer from "../components/Footer";
 import Profile from "../components/Profile";
 
 export default function Home(props) {
+  const entries = props.entries.contents
+  const graphicEntries = entries.filter((entry) => entry.category[0] === 'Graphic')
+  const webEntries = entries.filter((entry) => entry.category[0] === 'Web')
+  const photoEntries = entries.filter((entry) => entry.category[0] === 'Photo')
   return (
     <div>
       <Head>
@@ -21,8 +25,22 @@ export default function Home(props) {
 
       <main>
         {/* 取得した記事分回してEntryコンポーネント表示する */}
-        <Entries>
-          {props.entries.contents.map((entry) => {
+        <Entries title="Graphic">
+          {graphicEntries.map((entry) => {
+            return <Entry entry={entry} key={entry.id}></Entry>
+          })}
+        </Entries>
+
+        <Entries title="Web">
+          {webEntries.map((entry) => {
+            console.log(entry)
+            return <Entry entry={entry} key={entry.id}></Entry>
+          })}
+        </Entries>
+
+        <Entries title="Photo">
+          {photoEntries.map((entry) => {
+            console.log(entry)
             return <Entry entry={entry} key={entry.id}></Entry>
           })}
         </Entries>
@@ -45,7 +63,7 @@ export const getStaticProps = async () => {
 
         offset: 0,
 
-        limit: 10,
+        limit: 99,
 
         // fields: 'id,title,categories,tags,publishedAt,image,description'
       },

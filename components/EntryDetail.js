@@ -38,8 +38,8 @@ const EntryBody = styled.div`
   }
   & h3 {
     padding:16px ;
-    background-color:#333 ;
     color:#fff ;
+    background-color:#333 ;
   }
   & p {
     margin:16px ;

@@ -71,7 +71,7 @@ export default function Profile(props) {
           <ProfileLabel>生年月日</ProfileLabel>
           <ProfileValue>2002.06.22 </ProfileValue>
           <ProfileLabel>趣味</ProfileLabel>
-          <ProfileValue>YouTube鑑賞 / アイドル鑑賞</ProfileValue>
+          <ProfileValue>YouTube鑑賞 / アイドル鑑賞 / 写真撮影</ProfileValue>
           <ProfileLabel>スキル</ProfileLabel>
           <ProfileValue>Photoshop / illustrator / HTML / CSS / JavaScript</ProfileValue>
         </ProfileDescription>
