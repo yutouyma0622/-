@@ -1,11 +1,7 @@
 import styled from "styled-components";
 import Link from 'next/link'
 
-export default function Sample() {
-	<picture>
-	return <img scr="./img/ロゴ.png"></img>
-	</picture>
-  }
+
 
 const TopContainer =styled.header`
   text-align:center ;
