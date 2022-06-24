@@ -25,7 +25,9 @@ export default function Header(props) {
 	return (
 	  <HeaderContainer>
 		<HeaderTitle>
+      <picture>
       <img src="/bara.svg" />
+      </picture>
       <Link href={`/`}>
       Portfolio
       </Link>

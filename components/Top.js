@@ -2,7 +2,9 @@ import styled from "styled-components";
 import Link from 'next/link'
 
 export default function Sample() {
+	<picture>
 	return <img scr="./img/ロゴ.png"></img>
+	</picture>
   }
 
 const TopContainer =styled.header`
@@ -14,7 +16,9 @@ const TopContainer =styled.header`
 export default function Top(props) {
 	return (
 	  <TopContainer>
+		<picture>
 		<img scr="./img/ロゴ.png"></img>
+		</picture>
 	  </TopContainer>
 	);
   }

@@ -15,7 +15,7 @@ const EntryTitle = styled.h2`
   color: #fff;
 `;
 
-const EntryImg = styled.figure`
+const EntryImage = styled.figure`
   & img {
     margin:0 auto ;
     width:100% ;
@@ -57,9 +57,11 @@ export default function Entry(props) {
   return (
     <EntryContainer>
       <EntryTitle>{props.entry.title}</EntryTitle>
-      <EntryImg>
+      <EntryImage>
+        <picture>
         <img src={props.entry.image.url} alt="" />
-      </EntryImg>
+        </picture>
+      </EntryImage>
       <EntryBody dangerouslySetInnerHTML={{ __html: props.entry.body }}></EntryBody>;
     </EntryContainer>
   );

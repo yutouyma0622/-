@@ -20,7 +20,7 @@ const ProfileTitle = styled.h2`
   border-bottom: 1px solid #fff;
 `;
 
-const ProfileImg = styled.figure`
+const ProfileImage = styled.figure`
   margin: 0 32px 0 0;
   width: 200px;
   @media screen and (max-width: 640px) {
@@ -62,9 +62,11 @@ const ProfileWrap = styled.div`
 export default function Profile(props) {
   return (
     <ProfileContainer>
-      <ProfileImg>
+      <ProfileImage>
+        <picture>
         <img src="/top_rogo.svg" alt="" />
-      </ProfileImg>
+        </picture>
+      </ProfileImage>
       <ProfileWrap>
         <ProfileTitle>宇山 裕人 / Yuto Uyama</ProfileTitle>
         <ProfileDescription>
