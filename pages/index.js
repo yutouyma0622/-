@@ -6,7 +6,6 @@ import Entry from "../components/Entry"; //追加のentryコンポーメント
 import Entries from "../components/Entries";
 import Footer from "../components/Footer";
 import Profile from "../components/Profile";
-import Document from 'next/document';
 
 export default function Home(props) {
   const entries = props.entries.contents
