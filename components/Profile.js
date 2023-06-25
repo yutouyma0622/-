@@ -64,7 +64,7 @@ export default function Profile(props) {
     <ProfileContainer>
       <ProfileImage>
         <picture>
-        <img src="/top_rogo2.jpg" alt="" />
+        <img src="/top_rogo.svg" alt="" />
         </picture>
       </ProfileImage>
       <ProfileWrap>
