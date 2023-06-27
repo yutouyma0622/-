@@ -37,6 +37,13 @@ export default function Home(props) {
             return <Entry entry={entry} key={entry.id}></Entry>
           })}
         </Entries>
+
+        <Entries title="Others">
+          {webEntries.map((entry) => {
+            console.log(entry)
+            return <Entry entry={entry} key={entry.id}></Entry>
+          })}
+        </Entries>
       </main>
 
       <Footer />
