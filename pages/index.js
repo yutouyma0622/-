@@ -11,7 +11,7 @@ export default function Home(props) {
   const entries = props.entries.contents
   const graphicEntries = entries.filter((entry) => entry.category[0] === 'Graphic')
   const webEntries = entries.filter((entry) => entry.category[0] === 'Web')
-  const photoEntries = entries.filter((entry) => entry.category[0] === 'Photo')
+  const photoEntries = entries.filter((entry) => entry.category[0] === 'Others')
   return (
     <div>
       <Head>
@@ -33,13 +33,6 @@ export default function Home(props) {
 
         <Entries title="Web">
           {webEntries.map((entry) => {
-            console.log(entry)
-            return <Entry entry={entry} key={entry.id}></Entry>
-          })}
-        </Entries>
-
-        <Entries title="Others">
-          {othersEntries.map((entry) => {
             console.log(entry)
             return <Entry entry={entry} key={entry.id}></Entry>
           })}
