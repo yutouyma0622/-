@@ -39,7 +39,7 @@ export default function Home(props) {
         </Entries>
 
         <Entries title="Others">
-          {webEntries.map((entry) => {
+          {othersEntries.map((entry) => {
             console.log(entry)
             return <Entry entry={entry} key={entry.id}></Entry>
           })}
